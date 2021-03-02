@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<center><font face = "Times New Roman" size = "6"><p style="color:green;font-style:italic" th:text="'Hello, ' + ${title} + '!'" /></font></center>
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light" style="color:green"><b>Spring Boot Blog Website</b></h1>
+                <img src="https://farenda.com/wp-content/uploads/2015/06/spring.jpg" alt="spring" class="center">
+                <font face = "Comic sans MS" size =" 5"><p class="lead text-muted" style="color:blue;font-style:italic">Spring Boot is an open source Java-based framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications. This chapter will give you an introduction to Spring Boot and familiarizes you with its basic concepts.</p></font>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
+

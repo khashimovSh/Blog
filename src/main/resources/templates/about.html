@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1 th:text="${title}"/>
+    <img src="https://magazine.joomla.org/images/easyblog_images/498/f269038fa4534045b59925e7d5e023e1_XL.jpg">
+    <font face = "Comic sans MS" size =" 5"><p class="lead text-muted" style="color:blue;font-style:italic">Hello! I am a Computer
+    Engineering student, and I am learning many popular technologies such as Java programming language, Spring Boot Framework,
+    Git VCS, Django Framework and actively searching for a job as Software Developer!</p></font>
+</div>
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
